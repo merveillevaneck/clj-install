@@ -3,7 +3,7 @@
 (require '[babashka.fs :as fs])
 
 (def HOME (System/getenv "HOME"))
-(def symfiles {:deps.edn "deps.edn" :user.clj "preload.clj"})
+(def symfiles {:deps.edn "deps.edn" :user.clj "user.clj"})
 
 (defn pathjoin [root path]
   (str root (if (= (last root) \/) "" "/") path))
