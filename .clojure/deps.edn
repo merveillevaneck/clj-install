@@ -17,6 +17,6 @@
                               "-Djdk.attach.allowAttachSelf"
                               "-XX:+UnlockDiagnosticVMOptions" "-XX:+DebugNonSafepoints"]
 
-                   :main-opts ["-e" "(load-file (str (System/getProperty \"user.home\") \"/.clojure/user.clj\"))"
+                   :main-opts ["-e" "(load-file (str (System/getProperty \"user.home\") \"/.clojure/preload.clj\"))"
                                "-m" "nrepl.cmdline"
                                "--middleware" "[cider.nrepl/cider-middleware]"]}}}
